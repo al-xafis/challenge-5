@@ -1,0 +1,112 @@
+.freq {
+
+    .head-2 {
+        font-size: 2.5rem;
+        color: $Very-Dark-Blue;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .head-p {
+        font-size: 1.4rem;
+        color: $Grayish-Blue;
+        width: 40rem;
+        line-height: 1.7;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .questions {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        align-items: center;
+        
+        margin-top: 4rem;
+    }
+
+    .question-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        border-top: 1px solid $Grayish-Blue;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        
+
+    }
+
+    .question { 
+        font-size: 1.8rem;
+        color: $Very-Dark-Blue; 
+    }
+
+    .answer {
+        width:40%;
+        font-size: 1.2rem;
+        color: $Grayish-Blue;
+        line-height: 2;
+        visibility: hidden;
+        opacity: 0;
+        margin-bottom: 2rem;
+        // position: absolute;
+        max-height: 0;
+        transition: visibility 0s, opacity .2s .2s linear, max-height .5s ease-out;
+        
+    }
+
+    .arrow {
+        font-size: 3rem;
+        transition: all .5s;
+        transform: rotate(90deg);
+        color: $Soft-Blue;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    
+
+    .helper-display {
+        visibility: visible;
+        opacity: 1;
+        max-height: 90px;
+        // position: relative;
+        transform: scaleY(1);
+    }
+
+    .helper-rotate {
+        transform: rotate(270deg);
+        color: $Soft-Red; 
+    }
+
+    &__button {
+        padding: 1rem 2rem;
+        height: 3.7rem;
+        background-color: $Soft-Blue;
+        border: none;
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        color: #fff;
+        transition: all .2s;
+        border: 2px solid transparent;
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .2);
+
+        &:hover{
+            background-color: #fff;
+            border: 2px solid $Soft-Blue;
+            color: $Soft-Blue;
+        }
+
+        &:active{
+            transform: translateY(2px);
+        }
+    }
+
+    
+}
